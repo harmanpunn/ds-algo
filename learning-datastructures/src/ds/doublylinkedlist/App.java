@@ -2,8 +2,8 @@ package ds.doublylinkedlist;
 
 import java.util.List;
 
-import org.apache.commons.lang.StringEscapeUtils;
-import org.apache.commons.lang.StringUtils;
+//import org.apache.commons.lang.StringEscapeUtils;
+//import org.apache.commons.lang.StringUtils;
 
 
 public class App {
@@ -29,7 +29,7 @@ public class App {
 		String name1 = "//To start counting your letters, simply write or paste the text into the text area and Count ch...";
 		System.out.println(name.length());
 		
-		System.out.println(StringEscapeUtils.escapeJavaScript(StringUtils.abbreviate(name, 100)));
+		//System.out.println(StringEscapeUtils.escapeJavaScript(StringUtils.abbreviate(name, 100)));
 		System.out.println(name1.length());
 		//System.out.println(StringEscapeUtils.escapeJavaScript(StringUtils.abbreviate(name, 97))	);
 		
