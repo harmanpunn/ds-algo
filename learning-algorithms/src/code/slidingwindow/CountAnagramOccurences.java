@@ -3,19 +3,21 @@ package code.slidingwindow;
 import java.util.HashMap;
 import java.util.Map;
 
+/* Given a word pat and a text txt. 
+ * Return the count of the occurences of anagrams of the word in the text. */ 
 public class CountAnagramOccurences {
 
 	public static void main(String[] args) {
-
-		
 		String str = "aabaabaabbaaab";
 		String pattern = "aaba";
-		
 		System.out.println("Number of occurences of anagrams: "+ countOccurences(str, pattern));
+		
+		String str2 = "forxxorfxdofr";
+		String pattern2 = "for";
+		System.out.println("Number of occurences of anagrams: "+ countOccurences(str2, pattern2));
 	}
 
 	private static int countOccurences(String str, String pattern) {
-		
 		int j=0,i=0,ans=0;
 		Map<Character, Integer> map = new HashMap<>();
 		for(char c : pattern.toCharArray()) {
