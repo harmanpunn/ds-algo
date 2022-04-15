@@ -9,7 +9,6 @@ public class NearestSmallerToRight {
 
 	public static void main(String[] args) {
 		
-
 		int[] nums = {4,5,2,10,8};
 		System.out.println(getNearestSmallerToRight(nums));
 		
