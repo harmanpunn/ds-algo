@@ -1,4 +1,4 @@
-
+import math
 def subsetsum(arr):
     for i in range(rows):
         for j in range(cols):
@@ -19,7 +19,7 @@ def subsetsum(arr):
 def minSubsetSumDifference(boolArr, arr):
     resList = []
     mn = 9999
-    for i in range(cols):
+    for i in range(math.floor(cols/2)):
         if boolArr[n][i]:
             resList.append(i)
     print(resList)        
@@ -28,15 +28,10 @@ def minSubsetSumDifference(boolArr, arr):
         if resList[i]:
             mn = min(mn, sum(arr) - 2*resList[i])
 
-    for j in range(sum(arr) // 2, -1, -1):
-        if t[n][j] == True:
-            diff = sum(arr)  - (2 * j)
-            break        
-
     return mn    
 
 # sum = 11
-arr = [1,2,7]
+arr = [2,-1,0,4,-2,-9]
 n = len(arr)
 rows, cols = (n+1, sum(arr)+1)  
 t = ([[False for i in range(sum(arr) + 1)]
