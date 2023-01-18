@@ -1,3 +1,6 @@
+# Given an array containing both positive and negative integers, we have to find the length of the longest subarray with 
+# the sum of all elements equal to zero.
+
 def longestSubarray(nums):
     n=len(nums)
     max_len = 0
