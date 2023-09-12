@@ -21,4 +21,4 @@ def climbStairs(n):
 
 
 # print(climbStairsRecursion(40))
-print(climbStairs(200))
+print(climbStairs(10))

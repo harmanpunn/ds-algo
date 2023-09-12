@@ -29,6 +29,6 @@ def coinChange(coins, amount):
     return t[len(coins)][amount]
 
 coins = [1,2,5]
-amount = 11
+amount = 5
 print(coinChange(coins, amount))
 
